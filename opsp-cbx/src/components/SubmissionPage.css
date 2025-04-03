@@ -1,0 +1,129 @@
+.submission-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c00;
+  overflow: hidden;
+}
+
+.submission-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.success-icon {
+  background-color: #4caf50;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 30px;
+}
+
+.submission-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.submission-content p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.next-steps {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.next-steps h2 {
+  color: #c00;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #a00;
+}
+
+/* Footer styles (same as in OPSPForm.css) */
+.form-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-left h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-right {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-right {
+    margin-top: 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.form-footer a {
+  color: #ff4c4c;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  text-align: center;
+}

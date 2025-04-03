@@ -1,0 +1,154 @@
+.opsp-form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c00;
+  overflow: hidden;
+}
+
+.form-header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-header p {
+  margin: 10px 0 0;
+  font-style: italic;
+}
+
+.message {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #c00;
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.2);
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #c00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #a00;
+}
+
+.submit-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.form-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-left h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-right {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-right {
+    margin-top: 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.form-footer a {
+  color: #ff4c4c;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  text-align: center;
+}
