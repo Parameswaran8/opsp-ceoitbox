@@ -4,7 +4,8 @@ import './OPSPForm.css';
 const OPSPForm = () => {
   const [formData, setFormData] = useState({
     companyName: '',
-    companyUrl: ''
+    companyUrl: '',
+    email: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
@@ -40,11 +41,12 @@ const OPSPForm = () => {
           timestamp: formattedTimestamp,
           companyName: formData.companyName,
           companyUrl: formData.companyUrl,
+          email: formData.email,
         }
       };
 
       // Replace this URL with your Google Apps Script web app URL
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbwLWHlOo0qhGs-P36Bfogzdet413iBPX1iMvBzd2MwUhpwgC3ONh0qjOHbSUqogtjFn/exec';
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbzgPHMHBcV2PqbYV4hyGckC39csTzeXFn58gZVSNEFd8IgxdmUJf_VojpM7dmVbHmFP/exec';
 
       const response = await fetch(scriptUrl, {
         method: 'POST',
@@ -55,11 +57,13 @@ const OPSPForm = () => {
         body: JSON.stringify(formattedData)
       });
 
+      console.log('response', response)
+
       // Note: When using mode: 'no-cors', the response will be "opaque"
       // and we cannot actually check response.ok
       // Instead, we assume success if the request doesn't throw an error
       setMessage('Success! Data has been submitted.');
-      setFormData({ companyName: '', companyUrl: '' });
+      setFormData({ companyName: '', companyUrl: '', email: '' });
 
       // Optional: Redirect to success page
       // window.location.href = '/submission';
@@ -111,6 +115,21 @@ const OPSPForm = () => {
             onChange={handleChange}
             required
             placeholder="https://example.com"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">
+            Your mail id
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            placeholder="abc@example.com"
           />
         </div>
 
